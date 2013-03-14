@@ -26,6 +26,8 @@ setup(name='collective.sabaseform',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'sqlalchemy',
+          'zope.sqlalchemy',
       ],
       entry_points="""
       # -*- Entry points: -*-
