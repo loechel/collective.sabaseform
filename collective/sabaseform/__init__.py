@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError
 
 from collective.saversioning import VersionedMeta, VersionedListener
 
-from zope.app.component.hooks import getSite
+from zope.component.hooks import getSite
 from Products.CMFCore.utils import getToolByName
 from zope.globalrequest import getRequest
 
@@ -17,7 +17,7 @@ from Products.statusmessages.interfaces import IStatusMessage
 
 import zope.i18nmessageid
 MessageFactory = zope.i18nmessageid.MessageFactory('collective.sabaseform')
-
+_ = MessageFactory
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product."""
